@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Android Notes</string>
+    <string name="app_title">Notes</string>
+    <string name="add_note">Add</string>
+    <string name="note_title">Title</string>
+    <string name="note_text">Text...</string>
+    <string name="save_btn">Save</string>
+    <string name="delete">Delete</string>
+    <string name="no_title">No title</string>
+    <string name="no_text">No text</string>
+    <string name="fav">Fav</string>
+</resources>

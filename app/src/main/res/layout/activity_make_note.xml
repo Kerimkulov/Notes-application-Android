@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MakeNoteActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+        <LinearLayout
+            android:id="@+id/back_to_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_icon_foreground"
+                android:background="@color/colorPrimary"/>
+            <TextView
+                style="@style/nav_items_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/app_title" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp">
+            <EditText
+                android:id="@+id/note_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:autofillHints=""
+                android:background="@drawable/border"
+                android:hint="@string/note_title"
+                android:inputType="textCapSentences"
+                android:paddingLeft="@dimen/padding_edittext"
+                android:paddingRight="@dimen/padding_edittext"
+                android:singleLine="true"
+                android:textColor="@color/text_black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp">
+            <EditText
+                android:id="@+id/note_description"
+                android:layout_width="fill_parent"
+                android:layout_height="291dp"
+                android:background="@drawable/border"
+                android:gravity="top|left"
+                android:inputType="textMultiLine|textCapSentences"
+                android:lines="8"
+                android:maxLines="20"
+                android:padding="@dimen/padding_edittext"
+                android:hint="@string/note_text"
+                tools:ignore="RtlHardcoded"
+                android:textColor="@color/text_black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/save_btn_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/save_btn"
+                style="@style/save_btn"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

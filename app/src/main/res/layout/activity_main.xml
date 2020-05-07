@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            style="@style/linearLayout_style"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/app_title"
+                android:textAlignment="textEnd"
+                style="@style/nav_items_style"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearLayout_style"
+            android:layout_width="161dp"
+            android:layout_height="match_parent"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/add_note_btn"
+                style="@style/nav_items_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/add_note"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"/>
+            <TextView
+                android:id="@+id/go_fav_act"
+                style="@style/nav_items_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/fav"
+                android:textAlignment="textEnd"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="10dp"
+        android:id="@+id/init_note_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
